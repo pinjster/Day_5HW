@@ -109,6 +109,7 @@ a {
     cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
+    margin-right: 10px;
     transition: .5s ease-in-out;
     margin-right: .5rem;
 }
@@ -328,12 +329,12 @@ p a:hover {
 
 }
 
-/* explore */
-.middle-grid {
+/* .middle-grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-}
+
+} */
 
 /* explore */
 
@@ -430,13 +431,13 @@ p a:hover {
 }
 
 /* How-it-works payment box section */
-
 .how-it-works-middle-grid{
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     font-weight: 500;
 }
+
 
 .how-it-works-accept-box {
     display: flex;
@@ -481,8 +482,9 @@ p a:hover {
 }
 
 .accept-payment-card {
-    background-color: var(--mid-blue);
-    color: white;
+
+    background-color: rgba(8, 8, 252, 0.835); 
+    color: black;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     height: 500px;
@@ -779,6 +781,7 @@ p a:hover {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .footer-2 a{
     color: white;
 }
