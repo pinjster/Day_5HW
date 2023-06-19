@@ -47,7 +47,7 @@ body {
     top: 0;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 1rem;
@@ -59,23 +59,22 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    margin-right: auto;
-}
-
 .logo:hover {
     transform: scale(110%);
     transition: .3s;
 }
 
 .nav-links {
+    margin: 0 auto;
     list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: nowrap;
 }
 
-.nav-links li {
-    margin: 0 70px;
+.nav-links li a{
+    margin: 0 1rem;
     transition: .2s ease-in-out;
 }
 
@@ -94,6 +93,11 @@ a {
     transition: .2s ease-in-out;
 }
 
+.nav-btns {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .sign-in-btn {
     background-color: white;
     text-align: center;
@@ -106,6 +110,7 @@ a {
     font-weight: bold;
     font-size: 1rem;
     transition: .5s ease-in-out;
+    margin-right: .5rem;
 }
 
 .sign-in-btn:hover, .free-btn:hover{
@@ -177,6 +182,7 @@ a {
     font-weight: bold;
     color: black;
     transition: .2s ease-in-out;
+    margin-bottom: 1rem;
 }
 
 .chat-btn {
@@ -473,8 +479,6 @@ p a:hover {
     margin: 30px;
     font-size: 16px;
 }
-
-
 
 .accept-payment-card {
     background-color: var(--mid-blue);
@@ -781,6 +785,31 @@ p a:hover {
 
 
 @media only screen and (max-width: 1200px) {
+    
+    .sticky-nav {
+        z-index: 1;
+    }
+
+    .focus-btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside-bubbles {
+        transform: scale(80%);
+    }
+
+    .start-to-explore-boxes {
+        transform: scale(80%);
+    }
+
+    .accept-payment-box , .how-it-works-accept-box {
+        transform: scale(85%);
+    }
+    .bottom-sec {
+        transform: scale(80%);
+    }
+
     .sign-grid-main {
         grid-template-columns: auto auto auto;
         grid-template-rows: 8rem 10rem 30rem auto;
@@ -818,8 +847,42 @@ p a:hover {
 }
 
 @media only screen and (max-width: 900px) {
+    .sticky-nav {
+        flex-direction: column;
+        position: relative;
+    }
+    .nav-links{
+        margin-bottom: 1rem;
+    }
+    .logo {
+        margin-bottom: 1rem;
+    }
+    .grid-container {
+        padding: 0;
+    }
+    .top-landing {
+        transform: scale(70%);
+        padding: 0;
+        padding-left: 1rem;
+    }
+    
+    .aside-bubbles {
+        transform: scale(70%);
+    }
 
-}
+    .start-to-explore-boxes {
+        transform: scale(70%);
+    }
+
+    .accept-payment-box , .how-it-works-accept-box {
+        transform: scale(65%);
+    }
+    .bottom-sec {
+        transform: scale(70%);
+    }
+    .explore-sec {
+        margin: 0;
+    }
 
 @media only screen and (max-width: 600px) {
 
