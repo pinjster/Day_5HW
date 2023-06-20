@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+  }
+  
+  html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: #0c43cd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 16px;
+  }
+  
+  main {
+    display: flex;
+    background-color: #d3d6de;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15;
+
+    padding: 12px;
+    gap: 32px;
+    justify-content: space-between;
+  }
+  
+  aside {
+    background-color: #473fff;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow-y: clip;
+  }
+  
+  ol {
+    --spacing: 64px;
+    list-style-type: none;
+    padding: calc(var(--spacing) / 2) var(--spacing) 0 var(--spacing);
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  
+  li {
+    position: relative;
+    counter-increment: li;
+  }
+  
+  li::before {
+    content: counter(li);
+    text-align: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid #0a20af;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1.4;
+  }
+  
+  li:first-of-type::before {
+ 
+    color: black;
+    background-color: rgb(169, 169, 252);
+    border-color: rgb(169, 169, 252);
+  }
+  
+  li:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+  
+  li p {
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: max-content;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  li p:not([class]) {
+    letter-spacing: 1px;
+  }
+  
+  .text-light {
+    font-weight: 350;
+    color: #cccccc;
+    font-size: 11px;
+  }
+  
+  aside img {
+    transform: translateY(4px);
+  }
+  
+  section {
+    max-width: 550px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    padding-top: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+    margin-bottom: 32px;
+  }
+  
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  label {
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  input {
+    margin-bottom: 16px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+  }
+  
+  input:last-of-type {
+    margin-bottom: 90px;
+  }
+  
+   
+   
+    button 
+    {
+        align-self: var(--spacing);
+        border: none;
+        outline: none;
+        background: navy;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 8px;
+  }

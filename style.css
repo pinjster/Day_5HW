@@ -483,7 +483,7 @@ p a:hover {
 
 .accept-payment-card {
 
-    background-color: rgba(8, 8, 252, 0.835); 
+    background-color: var(--soft-purple); 
     color: black;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -728,7 +728,7 @@ p a:hover {
 
 /* footer-get-started */
 .footer-get-started {
-    background-color: blue;
+    background-color: var(--soft-purple);
     color: white;
     text-align: center;
 }
@@ -886,6 +886,7 @@ p a:hover {
     .explore-sec {
         margin: 0;
     }
+}
 
 @media only screen and (max-width: 600px) {
 
